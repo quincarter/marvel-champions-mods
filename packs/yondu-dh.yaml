@@ -3,6 +3,7 @@ path: packs/yondu-dh
 # Published by the game repo until it moved here; adopt keeps those versions as they were (README).
 adopt: game
 creator: "DesignHacker & BlueHG (nemesis set)"
+editors: [bluefireF5ran]
 permission:
   by: "DesignHacker & BlueHG (nemesis set)"
   evidence: "packs/yondu-dh/PERMISSION.md (and pack.json permission)"

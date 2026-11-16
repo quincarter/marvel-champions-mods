@@ -3,6 +3,7 @@ path: packs/mephisto-nep
 # Published by the game repo until it moved here; adopt keeps those versions as they were (README).
 adopt: game
 creator: "Neptune (Typhon00)"
+editors: [bluefireF5ran]
 permission:
   by: "Neptune (Typhon00)"
   evidence: "packs/mephisto-nep/PERMISSION.md (and pack.json permission)"

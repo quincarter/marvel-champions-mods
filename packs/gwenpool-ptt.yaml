@@ -3,6 +3,7 @@ path: packs/gwenpool-ptt
 # Published by the game repo until it moved here; adopt keeps those versions as they were (README).
 adopt: game
 creator: "Patatasaurio"
+editors: [bluefireF5ran]
 permission:
   by: "Patatasaurio"
   evidence: "packs/gwenpool-ptt/PERMISSION.md (and pack.json permission)"

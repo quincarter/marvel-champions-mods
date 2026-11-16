@@ -3,6 +3,7 @@ path: packs/punisher-pk
 # Published by the game repo until it moved here; adopt keeps those versions as they were (README).
 adopt: game
 creator: "PermaKarma"
+editors: [bluefireF5ran]
 permission:
   by: "PermaKarma"
   evidence: "packs/punisher-pk/PERMISSION.md (and pack.json permission)"
