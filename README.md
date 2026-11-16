@@ -151,12 +151,10 @@ These are repository settings, not files, and have to be set by the owner:
     `.github/`; the gate fails such a submission, and reviewers check that **All checks** comes from the
     **Check submission** workflow;
   - block force pushes and deletion.
-- **R2 secrets** are repository secrets (the owner's call, 2026-11-15), and the upload job's `store` environment has no
-  rules. That is safe only while the owner is the only account with write access: anyone with write can push a
-  branch whose workflow reads repository secrets. So give contributors who curate packs kept here an `editors:` entry
-  ("Packs kept in this repo"), never write access. If anyone else ever gets write access, first move the R2 secrets
-  into the `store` environment (Settings > Environments) with deployment branches limited to `main`, and delete the
-  repository copies.
+- **`store` environment** (Settings > Environments), which holds the R2 secrets: deployment branches limited to
+  `main`, so no other branch's workflow can reach them. Keep the R2 secrets in that environment only, never as
+  repository secrets: anyone with write access can push a branch whose workflow reads repository secrets. Even so,
+  give contributors who curate packs kept here an `editors:` entry ("Packs kept in this repo"), not write access.
 - **Fork pull requests** (Settings > Actions > General): this repo is private, so allow workflows to run from fork
   pull requests (without sending write tokens or secrets to them), or submissions from forks get no check. Require
   approval for outside contributors' runs.
