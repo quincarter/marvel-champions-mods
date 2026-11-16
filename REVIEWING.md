@@ -14,7 +14,9 @@ Copy this list into your review.
       only the maintainer changes them. Deletions and renames count toward the one pack: one withdrawal on its own
       passes, two withdrawals or a withdrawal next to a new or changed entry fail.
 - [ ] It is not a `path:` entry or a change under `packs/<id>/`, unless the maintainer made it (packs kept here are
-      maintainer-curated).
+      maintainer-curated), or it is an editor's change to the folder of a pack whose entry on `main` lists them under
+      `editors:`. The gate lets an editor change only that folder, with `pack.json`'s version raised; read the diff as
+      you would the maintainer's own.
 - [ ] The pull request template is filled in.
 
 ## 2. The check
@@ -103,6 +105,7 @@ withdrawn. The published versions stay in the bucket, so saves still load.
 
 Not available yet: the check refuses `path:` entries until this repo has a root `package.json` and
 `package-lock.json` pinning the published pack SDK. Once it does, only the maintainer adds or changes `packs/<id>/`
-folders and their `path:` entries. The same checklist applies,
+folders and their `path:` entries, apart from the editors an entry lists under `editors:` (CONTRIBUTING.md, "Packs
+kept in this repo"), who may change that pack's folder only. The same checklist applies,
 with the permission evidence recorded in the folder's `PERMISSION.md` and `pack.json`. Bump the pack's `version` for
 every change; a folder with a `DRAFT` file is not built or published, so leave its entry out until it is ready.

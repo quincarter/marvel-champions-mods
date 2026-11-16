@@ -143,6 +143,20 @@ Packs kept in this repo (`packs/<id>/` with a `path` entry) build with the SDK p
 "Packs kept in this repo"). **Don't open pull requests that add or change them**: submit your pack from your
 own repo made from the template, as above.
 
+The one exception is a pack's **editors**: the GitHub logins its entry lists under `editors:` (set by the maintainer).
+An editor may open a pull request from a fork that changes files inside that pack's folder, `packs/<id>/`, and
+nothing else:
+
+- one pack per pull request, and only inside its folder: not the entry `packs/<id>.yaml` (its `path`, `adopt` and
+  `editors` stay the maintainer's), not another pack, not `scripts/`, `.github/`, `package.json` or
+  `package-lock.json`;
+- `pack.json`'s `version` must go up (a plain `1.2.3`), since published versions are immutable;
+- the pack must pass `mc-pack validate --publish` and `mc-pack test` with the SDK pinned here; the check rebuilds it.
+
+The gate reads the editors list from `main`, never from the pull request, so a pull request can't add its author.
+If you were added as an editor after you opened the pull request, push a new commit to it (or ask the maintainer to
+close and reopen it) so the check runs again with the new list.
+
 ## What a pack can't do
 
 A pack is data, never code. A card that needs a rule the game's engine doesn't have yet (a new keyword, timing or

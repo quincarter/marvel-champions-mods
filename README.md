@@ -82,6 +82,13 @@ let its publish finish before merging the next change. A change to a pack's fold
 published like any other entry: bump the pack's `version` in its `pack.json`, since published versions are
 immutable. A folder with a `DRAFT` file in it is not built or published; leave its entry out until it is ready.
 
+**Editors.** A `path` entry may list GitHub logins under `editors:` (`editors: [someone]`): people who curate that
+pack without write access to this repo. The check's gate (`scripts/pr-gate.mjs`) lets an editor's fork pull request
+change files inside `packs/<id>/` and nothing else, and requires `pack.json`'s `version` to go up. It reads the list
+from `main`, so only the maintainer adds or removes an editor, by changing the entry. Prefer this to making someone a
+collaborator: write access would let them change the scripts and workflows in a pull request the gate treats as a
+maintainer's, and push branches whose workflows run in this repo.
+
 **Packs the game repo used to publish.** The community packs that started in the game repo (its
 `content-packs/community/` and publish-packs workflow) move here as packs kept in this repo, with the same ids and
 versions. Their entries add `adopt: game`, which takes the id over from the game repo: the publish lets the id

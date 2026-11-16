@@ -6,7 +6,8 @@
 # changes run here until a maintainer merges them. The pull request is read only as data, through the GitHub API:
 #
 #   - `gate` (base branch's scripts, a read-only token, no pack code): lists the changed files through the API,
-#     refuses a submission from a non-maintainer that touches anything but packs/<id>.yaml (scripts/pr-gate.mjs),
+#     refuses a submission from a non-maintainer that touches anything but packs/<id>.yaml, or the folder of a pack
+#     kept here whose entry on the base branch lists them under `editors:` (scripts/pr-gate.mjs),
 #     fails closed when a pack changed but no entry was found, fetches each entry's YAML and the creator's release zip
 #     (scripts/fetch-release.sh), and hands those and the base branch's scripts on as the `trusted` artifact;
 #   - `check` (one per entry, `permissions: {}`, no checkout, no token anywhere): runs the handed-on build-entry.sh,
@@ -53,6 +54,8 @@ jobs:
           REPO: ${{ github.repository }}
           PR: ${{ github.event.pull_request.number }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          # A kept pack's editors are read from here (this workflow's own commit), never from the pull request.
+          BASE_SHA: ${{ github.sha }}
           AUTHOR: ${{ github.event.pull_request.user.login }}
           SENDER: ${{ github.event.sender.login }}
           CHANGED_FILES: ${{ github.event.pull_request.changed_files }}

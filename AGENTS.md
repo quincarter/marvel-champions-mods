@@ -59,7 +59,9 @@ intellectual property of Fantasy Flight Games and Marvel.
   `package-lock.json` in a submission pull request. Changes to the workflows and scripts are maintainer work in their
   own pull requests, and must keep `node scripts/check-workflow-secrets.mjs` passing (no job that runs pack code may
   hold a secret or a write token).
-- **Never add or change a pack kept in this repo** (`path:` entries, `packs/<id>/`) unless the maintainer asked you to.
+- **Never add or change a pack kept in this repo** (`path:` entries, `packs/<id>/`) unless the maintainer asked you to,
+  or you are working for one of that pack's editors (its entry's `editors:` on `main`), and then only inside its
+  `packs/<id>/` folder, with `pack.json`'s `version` raised.
 - **Never move a creator's tag or replace a release zip**, and never point `commit` at anything but the tag's commit.
 - **Ask before anything that leaves the machine**: forking, pushing a branch, opening or commenting on a pull request
   or issue. Show the human the exact file and text first, and write as them, with no assistant attribution lines.
