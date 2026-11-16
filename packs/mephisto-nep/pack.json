@@ -1,11 +1,12 @@
 {
   "id": "mephisto-nep",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "kind": "scenario",
   "name": "Mephisto",
   "authors": ["Neptune (Typhon00)"],
   "description": "Fan-made scenario pack by Neptune (Typhon00): a battle for your soul against Mephisto, with the Blackheart, Corruptive Offers, Damned and Mother of Demons encounter sets and new art for the Standard and Expert sets.",
   "tags": ["Demons", "Mystic", "Nemesis"],
+  "wave": "cycle9",
   "unlock": "open",
   "cover": "cover.webp",
   "license": "Fan-made, non-commercial; see CREDITS.md",

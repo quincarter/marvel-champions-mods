@@ -22,8 +22,10 @@ tests (`packages/mod-sdk/src/community-packs.test.ts`) build a copy without that
   `01b.need-to-kill-reset`).
 - `cards/x.carnage-nep.08.json`: two extra ids (`-constant-piercing`, `-constant-ranged`): Amorphous Arsenal's bonus is
   one forced interrupt per keyword.
-- `decks/carnage-nep-aggression.json`: a suggested deck (not the author's): the 15 Carnage cards plus the 25 Core
-  Aggression and basic cards of the Iron Man starter deck. The author's own two lists are not in the source.
+- `decks/carnage-nep-aggression.json`: the author's own Aggression list ("Carnage Deck"), as the curated repository
+  transcribed it (`carnage_nep/decks/carnage-aggression.json` at commit `221b4e4`): the 15 Carnage cards, 15
+  Aggression, 5 basics and the 5 Attack events from other aspects Eddie allows (40 cards). His Protection list is left
+  out: Looking for Trouble is not an Attack event. It replaces the Core Set Aggression list of 3.0.2 and earlier.
 
 Re-running the importer would overwrite the card JSON: redo the edits above.
 

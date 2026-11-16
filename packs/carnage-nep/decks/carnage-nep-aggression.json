@@ -1,10 +1,60 @@
 {
   "id": "carnage-nep-aggression",
-  "name": "Carnage (Aggression) suggested deck",
+  "name": "Carnage - Aggression - Starter Deck",
   "packCode": "carnage-nep",
   "identityCardId": "x.carnage-nep.01a",
-  "aspects": ["aggression"],
+  "aspects": [
+    "aggression"
+  ],
   "cards": [
+    {
+      "cardId": "10015",
+      "quantity": 2
+    },
+    {
+      "cardId": "16043",
+      "quantity": 2
+    },
+    {
+      "cardId": "16045",
+      "quantity": 1
+    },
+    {
+      "cardId": "18011",
+      "quantity": 1
+    },
+    {
+      "cardId": "18012",
+      "quantity": 1
+    },
+    {
+      "cardId": "18015",
+      "quantity": 1
+    },
+    {
+      "cardId": "19016",
+      "quantity": 1
+    },
+    {
+      "cardId": "21046",
+      "quantity": 1
+    },
+    {
+      "cardId": "27191",
+      "quantity": 1
+    },
+    {
+      "cardId": "28016",
+      "quantity": 1
+    },
+    {
+      "cardId": "29017",
+      "quantity": 1
+    },
+    {
+      "cardId": "56013",
+      "quantity": 1
+    },
     {
       "cardId": "x.carnage-nep.02",
       "quantity": 1
@@ -54,55 +104,27 @@
       "quantity": 2
     },
     {
-      "cardId": "01050",
+      "cardId": "04040",
       "quantity": 1
-    },
-    {
-      "cardId": "01051",
-      "quantity": 1
-    },
-    {
-      "cardId": "01052",
-      "quantity": 2
     },
     {
       "cardId": "01053",
-      "quantity": 2
+      "quantity": 1
     },
     {
-      "cardId": "01054",
-      "quantity": 2
-    },
-    {
-      "cardId": "01055",
-      "quantity": 2
-    },
-    {
-      "cardId": "01056",
+      "cardId": "09037",
       "quantity": 2
     },
     {
       "cardId": "01057",
-      "quantity": 2
-    },
-    {
-      "cardId": "01083",
       "quantity": 1
     },
     {
-      "cardId": "01084",
+      "cardId": "05031",
       "quantity": 1
     },
     {
-      "cardId": "01085",
-      "quantity": 1
-    },
-    {
-      "cardId": "01086",
-      "quantity": 1
-    },
-    {
-      "cardId": "01087",
+      "cardId": "08013",
       "quantity": 1
     },
     {
@@ -118,22 +140,14 @@
       "quantity": 1
     },
     {
-      "cardId": "01091",
-      "quantity": 1
-    },
-    {
-      "cardId": "01092",
-      "quantity": 1
-    },
-    {
-      "cardId": "01093",
+      "cardId": "06034",
       "quantity": 1
     }
   ],
   "provenance": {
     "verified": false,
     "sources": [
-      "A suggested deck assembled for the digital game, not the pack author's: the 15 Carnage cards plus the Core Set Aggression and basic cards of the Iron Man (Aggression) starter deck (the same 25 cards)"
+      "The author's own Aggression deck list for Carnage (\"Carnage Deck\", MC Custom Content by Neptune), as transcribed in the curated repository (carnage_nep/decks/carnage-aggression.json in mc-digital-custom-packs, commit 221b4e4): his 15 hero cards, 15 Aggression, 5 basics and the 5 Attack events from other aspects his alter-ego allows, 40 cards. His Protection list is left out: Looking for Trouble is not an Attack event."
     ]
   }
 }

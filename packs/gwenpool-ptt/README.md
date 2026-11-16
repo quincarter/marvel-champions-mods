@@ -29,9 +29,10 @@ The Vitest tests (`packages/mod-sdk/src/community-packs.test.ts`, `gwenpool-ptt.
   alter-ego face one (`01b.pink-bubble`); every other player card has one, every nemesis card one purple bubble. The
   importer's `x_bubbles` (in `extensions.json`) says which bubbles are instructions (`rules: true`) and which flavor.
 - `abilities/index.ts`: every ability and bubble, each commented with the base card it copies and the author's rule.
-- `decks/gwenpool-ptt-pool.json`: a suggested deck (not the author's; the source has no precon list): the 15
-  Gwenpool cards plus the 24 'Pool aspect cards of the Deadpool ('Pool) starter deck plus the basic card Haymaker
-  (40 cards).
+- `decks/gwenpool-ptt-pool.json`: the curated repository's starter deck (the curator's, not the author's;
+  `gwenpool_ptt/decks/gwenpool-pool.json` at commit `221b4e4`), with its card codes turned into this pack's ids: the
+  15 Gwenpool cards plus 27 'Pool and basic cards (42 cards), the basics leaning on her Avenger and Guardian traits. It
+  replaces the Deadpool ('Pool) starter deck's list of 0.2.3 and earlier.
 
 Re-running the importer would overwrite the card JSON: redo the bubble ids above.
 

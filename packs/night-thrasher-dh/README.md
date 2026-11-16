@@ -20,10 +20,12 @@ renames the pictures to the pack's card codes; the alternate alter-ego `night_th
 
 - `abilities/index.ts`: every ability, each commented with the base card it copies.
 - `cards/x.night-thrasher-dh.01a.json`: `deckbuilding.offAspectAllowance` (Dwayne's Tech Deck, below).
-- `decks/night-thrasher-dh-aggression.json`: a suggested deck (not the author's; the source has no precon list): the
-  Battle Board and the 15 Night Thrasher cards, plus the Core Set Aggression and basic cards of the Iron Man
-  (Aggression) starter deck, with the 2 Tac Team swapped for 2 Heroic Intuition (a Justice Skill upgrade) so the deck
-  uses Tech Deck. The Battle Board is permanent and does not count toward the deck size (RRG 1.8 p. 32).
+- `decks/night-thrasher-dh-justice.json`: the curated repository's starter deck (the curator's, not the author's;
+  `night_thrasher_dh/decks/night-thrasher-justice.json` at commit `221b4e4`), with its card codes turned into this
+  pack's ids: the Battle Board and the 15 Night Thrasher cards plus 27 Justice and basic cards. Tech Deck adds 4 Skill
+  cards from other aspects: Martial Prowess (Aggression) and 3 Repurpose (Protection). The Battle Board is permanent
+  and does not count toward the deck size (RRG 1.8 p. 32). It replaces the Core Set Aggression deck of 0.1.2 and
+  earlier (`night-thrasher-dh-aggression`).
 
 Re-running the importer would overwrite the card JSON: redo the card edit above.
 
