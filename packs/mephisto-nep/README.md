@@ -43,6 +43,10 @@ so they are `altArt` for the base cards and **not** new sets. Only the flavor li
 Red Skull, Venom and Klaw; these quote Mephisto, which is art, not data). Neptune's folder holds 10 pictures; the two
 duplicates (Advance, Assault) are one picture each.
 
+`art/villain.webp` is the villain's picture on Scenario select (`pack.json` `pictures.villain`, keyed by the
+villain's code `x.mephisto-nep.01`; without it the tile shows the stage I card). It is a Marvel comics panel of
+Mephisto on the phone, chosen by the maintainer (pack 1.2.0), cropped to a portrait around his face (470 x 583, WebP).
+
 ## Cards
 
 | Set (encounter set id)                      | Records | Printed cards | Codes                             |

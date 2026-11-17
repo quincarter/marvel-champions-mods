@@ -16,6 +16,8 @@ Mephisto (`mephisto-nep`) is a fan-made scenario pack by **Neptune** (Typhon00).
   encounter cards.
 - Source: the author's download "Mephisto" (87 files: scenario pack, Standard and Expert art, four modular sets, the
   printouts and the rules insert), shared by the owner. The author distributes it in the community Discord.
+- Scenario select picture (`art/villain.webp`, pack 1.2.0): a Marvel comics panel of Mephisto, chosen by the
+  maintainer; not part of Neptune's download.
 - Card data transcription, the conversion to the pack format and the README's rules summary: this project (see
   `TRANSCRIPTION.md` for what was read by eye and is unconfirmed).
 
