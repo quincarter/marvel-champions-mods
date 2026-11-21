@@ -281,11 +281,13 @@ export default definePackAbilities({
   // which then left the game with its host and never scored (PR #47 review). Spider-Tracer's trigger (01007).
   "x.the-rose-bf.10.victory-forced-interrupt": forcedInterrupt(when.defeated("host"), addToVictoryDisplay(cards(self))),
   // "Attached minion's printed hit points are 14. It gains villainous, guard, and the Influenced and Elite traits." The
-  // printed value set as Ultron's facedown Drones' stats (`setBase`).
+  // printed value set as Ultron's facedown Drones' stats (`setBase`). A keyword grant takes a keyword instance
+  // (`{ name }`), not a bare string: a string granted a nameless keyword, so the minion had neither keyword and the
+  // client crashed drawing it (0.1.1).
   "x.the-rose-bf.10.twisted-allegiance-constant": constant(
     gets("hp", 14, ATTACHED_MINION, { setBase: true }),
-    gainsKeyword("villainous", ATTACHED_MINION),
-    gainsKeyword("guard", ATTACHED_MINION),
+    gainsKeyword({ name: "villainous" }, ATTACHED_MINION),
+    gainsKeyword({ name: "guard" }, ATTACHED_MINION),
     gainsTrait(INFLUENCED, ATTACHED_MINION),
     gainsTrait(ELITE, ATTACHED_MINION),
   ),
