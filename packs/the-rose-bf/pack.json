@@ -1,6 +1,6 @@
 {
   "id": "the-rose-bf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "kind": "scenario",
   "name": "The Rose",
   "authors": [
@@ -17,7 +17,7 @@
   "cover": "cover.webp",
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
-    "app": ">=0.51.0",
+    "app": ">=0.53.0",
     "packs": []
   },
   "languages": {

@@ -9,13 +9,14 @@ Hide x2. Store shelf: Fear No Evil
 **Modular sets** (the authors' choice for the store, 2026-11-20), by the rules sheet's roles: a minion set, **Sinister
 Syndicate** (5 minions); a side scheme set, **State of Emergency** (4 side schemes); a third set, **Streets of Mayhem**
 (Setting environments, which 1B finds). Mini-boss, set aside: **Running Interference** (Tombstone, 9 hit points): the scenario sets one modular set aside at setup
-(`setAsideModularSetCount: 1`), for Twisted Allegiance to take its minion from. Pick a mini-boss set there (one
-with a minion); the game cannot yet limit that pick to such sets, so with a set that has no minion Twisted Allegiance
-is discarded when revealed and the set is shuffled in. Its paper default is Fear No Evil's
+(`setAsideModularSetCount: 1`), for Twisted Allegiance to take its minion from, and names Running Interference as the
+default (`recommendedSetAsideModularSetIds`, game 0.53.0). The setup screen's "Set-aside modular set" stepper picks
+another; pick a mini-boss set (one with a minion), since the game does not limit that pick to such sets, and with a set
+that has no minion Twisted Allegiance is discarded when revealed and the set is shuffled in. Its paper default is Fear No Evil's
 (Tracksuit Mafia, Cops, Disasters; Tombstone or The Owl), which packs cannot recommend until wave 11 opens to them.
 
-Needs the game at 0.51.0 or later (`requires.app`): overdefeated side schemes, the keyword check that leaves Rose's
-Greenhouse's own grant out, and a pack scenario's set-aside modular set.
+Needs the game at 0.53.0 or later (`requires.app`): overdefeated side schemes, the keyword check that leaves Rose's
+Greenhouse's own grant out, a pack scenario's set-aside modular set (0.51.0) and its recommended default (0.53.0).
 
 ## How it was made
 
