@@ -6,7 +6,7 @@ hero. A deck uses the rule by listing its hero's copy (`optionalForIdentity`): i
 precons and every other deck stay legal without it. Starter deck: Hulk's Lab Partners - Protection (40 cards plus the
 house-rule card). See `CREDITS.md` and `PERMISSION.md`.
 
-Needs the game at 0.52.0 or later (`requires.app`): the after-hand-discard event (game issue #922).
+Needs the game at 0.53.0 or later (`requires.app`): the after-hand-discard event (game issue #922).
 
 The Response ("After an identity-specific card is discarded by an ability, tuck that card under here from your
 discard pile. (Limit twice per phase.)") is one Response with one limit, for a card discarded by a card's ability from
