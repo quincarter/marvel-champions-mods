@@ -10,7 +10,8 @@
  * ability discards from your hand (`cardDiscardedFromHand`), your deck (`cardDiscardedFromDeck`, every path off the top
  * of a player's deck, "discard until" included) or play. The card is discarded, the discarding ability sees it as
  * discarded (Abomination 10026's "if a [physical] resource was discarded this way"), then it is tucked from the discard
- * pile. The cards one effect discards share one response window.
+ * pile. The cards one effect discards share one response window. A card whose discard emptied your deck is in the new
+ * deck by then, not the discard pile, so it isn't tucked.
  */
 import {
   cards,
@@ -41,7 +42,14 @@ function dontMakeMeAngry(cardId: string) {
     [`${cardId}.dont-make-me-angry-response`]: response(
       on.either(
         on.cardDiscardedFromHand({ card: YOUR_IDENTITY_SPECIFIC, yours: true }),
-        { on: "cardDiscardedFromDeck", playerIs: "controller", targetIs: YOUR_IDENTITY_SPECIFIC },
+        // `at: "discard"`: a card whose discard emptied your deck was shuffled into the new deck before this window,
+        // and "from your discard pile" can't tuck it from there (the engine records it `at: "deck"`).
+        {
+          on: "cardDiscardedFromDeck",
+          playerIs: "controller",
+          targetIs: YOUR_IDENTITY_SPECIFIC,
+          eventIs: { at: "discard" },
+        },
         on.playerCardDiscardedFromPlay({ who: YOUR_IDENTITY_SPECIFIC, by: "playerCard" }),
         on.playerCardDiscardedFromPlay({ who: YOUR_IDENTITY_SPECIFIC, by: "encounterCard" }),
       ),
