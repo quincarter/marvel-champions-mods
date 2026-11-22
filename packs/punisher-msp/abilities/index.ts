@@ -94,6 +94,7 @@ import {
   thwart,
   tuckCards,
   tuckedUnder,
+  tuckedUnderRef,
   addCounters,
   action,
   applyRuleUntil,
@@ -429,7 +430,7 @@ export default definePackAbilities({
   "x.punisher-msp.18.when-revealed": whenRevealed(tuckCards(cards(each(FRANK_CASTLES_WEAPONS)), self)),
   // "When Defeated: Put each upgrade tucked here into play under its owner's control."
   "x.punisher-msp.18.when-defeated": whenDefeated(
-    forEachCard("tucked", tuckedUnder(self), putIntoPlay(chosen("tucked"), ownerOf(chosen("tucked")))),
+    forEachCard("tucked", tuckedUnderRef(self), putIntoPlay(chosen("tucked"), ownerOf(chosen("tucked")))),
   ),
 
   // =========================================================================
