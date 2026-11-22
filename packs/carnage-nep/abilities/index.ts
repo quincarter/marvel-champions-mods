@@ -152,9 +152,9 @@ const TORMENT = each(query("minion", { name: "Torment" }));
  * (p. 12). `of` is the attacked character.
  */
 const ALLY_OF_CLASS = (extra: { readonly controller?: "you" } = {}) =>
-  query("ally", sameClassificationAs(eventTarget), extra);
+  query("ally", { ...sameClassificationAs(eventTarget), ...extra });
 const PERSONA_OF_CLASS = (extra: { readonly controller?: "you" } = {}) =>
-  query("support", sameClassificationAs(eventTarget), { trait: PERSONA, ...extra });
+  query("support", { ...sameClassificationAs(eventTarget), trait: PERSONA, ...extra });
 
 export default definePackAbilities({
   // =========================================================================
