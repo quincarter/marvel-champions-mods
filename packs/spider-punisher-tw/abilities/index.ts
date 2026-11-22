@@ -418,7 +418,7 @@ export default definePackAbilities({
   // "Forced Interrupt: When the villain would scheme against you, it attacks you instead. Place 2 threat on the main
   // scheme after that attack." Get Behind Me! (01078) for "the villain attacks you instead".
   "x.spider-punisher-tw.17.revealed-identity-forced-interrupt": forcedInterrupt(
-    on.enemySchemes(theVillain),
+    on.enemySchemes(query("villain")),
     instead(enemyAttack(theVillain, { against: you }), placeThreat(2, theMainScheme)),
   ),
   // "Hero Action: Spend 2 resources of any type → discard this card."
