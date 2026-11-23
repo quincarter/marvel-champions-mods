@@ -1,6 +1,6 @@
 {
   "id": "carnage-nep",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "kind": "hero",
   "name": "Carnage",
   "authors": ["Neptune"],
@@ -9,6 +9,7 @@
   "wave": "cycle5",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.carnage-nep.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.1.0",
