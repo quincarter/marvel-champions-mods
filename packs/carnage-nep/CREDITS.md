@@ -11,6 +11,8 @@ Carnage (`carnage-nep`) is a fan-made pack by **Neptune**.
 - The starter deck (`decks/carnage-nep-aggression.json`): Neptune's own Aggression list, transcribed by BluefireF5ran
   in the curated repository (commit `221b4e4`).
 - Ability scripts and the conversion to the pack format: this project.
+- Hero select picture (`art/hero.webp`): comic art of Carnage supplied by the maintainer; the artist signs it in the
+  picture.
 
 The card data was converted from MarvelCDB-shaped records with the mod SDK's `importMarvelCdbPack`.
 Character art is Marvel comics art, as used by each author.
