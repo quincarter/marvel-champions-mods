@@ -1,6 +1,6 @@
 {
   "id": "sentinel-tw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "kind": "hero",
   "name": "Sentinel",
   "authors": [
@@ -15,6 +15,7 @@
   "wave": "cycle6",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.sentinel-tw.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.51.0",
