@@ -1,6 +1,6 @@
 {
   "id": "punisher-msp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "kind": "hero",
   "name": "The Punisher",
   "authors": [
@@ -15,6 +15,7 @@
   "wave": "cycle11",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.punisher-msp.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.51.0",
