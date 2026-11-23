@@ -1,6 +1,6 @@
 {
   "id": "throg-ptt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "kind": "hero",
   "name": "Throg",
   "authors": ["Patatasaurio & Caurel"],
@@ -9,6 +9,7 @@
   "wave": "cycle4",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.throg-ptt.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.1.0",
