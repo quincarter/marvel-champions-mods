@@ -32,5 +32,8 @@
   "setAsideCardIds": [
     "x.the-rose-bf.10"
   ],
-  "setAsideModularSetCount": 1
+  "setAsideModularSetCount": 1,
+  "recommendedSetAsideModularSetIds": [
+    "running_interference"
+  ]
 }
