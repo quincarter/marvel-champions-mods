@@ -14,6 +14,7 @@ Gwenpool (`gwenpool-ptt`) is a fan-made pack by **PatataSaurio** (Patatasaurio).
 - The starter deck (`decks/gwenpool-ptt-pool.json`, not the author's): BluefireF5ran, from the curated repository
   (commit `221b4e4`).
 - Ability scripts and the conversion to the pack format: this project.
+- Hero select picture (`art/hero.webp`): supplied by the maintainer.
 
 The card data was converted from MarvelCDB-shaped records with the mod SDK's `importMarvelCdbPack`. The speech bubbles
 listed in `extensions.json` (the importer's copy of the source's `x_bubbles`) are the author's.
