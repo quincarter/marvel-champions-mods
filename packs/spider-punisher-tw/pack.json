@@ -1,6 +1,6 @@
 {
   "id": "spider-punisher-tw",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "kind": "hero",
   "name": "Spider-Punisher",
   "authors": [
@@ -15,6 +15,7 @@
   "wave": "cycle5",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.spider-punisher-tw.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.51.0",
