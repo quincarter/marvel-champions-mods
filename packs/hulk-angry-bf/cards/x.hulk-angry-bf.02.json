@@ -1,0 +1,37 @@
+{
+  "id": "x.hulk-angry-bf.02",
+  "name": "\"Don't Make Me Angry!\"",
+  "setCode": "hulk-angry-bf",
+  "cycleId": "hulk-angry-bf",
+  "collectorNumber": "17",
+  "quantityInSet": 1,
+  "unique": false,
+  "type": "upgrade",
+  "cost": 0,
+  "specialCost": "dash",
+  "resourceIcons": {},
+  "aspect": "hero:01019a",
+  "optionalForIdentity": true,
+  "traits": [],
+  "keywords": [
+    {
+      "name": "permanent"
+    },
+    {
+      "name": "setup"
+    }
+  ],
+  "deckLimit": 1,
+  "text": {
+    "printed": "Permanent. Setup.\nTucked cards here may be played and spent as if they were in your hand.\nResponse: After an identity-specific card is discarded by an ability, tuck that card under here from your discard pile. (Limit twice per phase.)",
+    "current": "Permanent. Setup.\nTucked cards here may be played and spent as if they were in your hand.\nResponse: After an identity-specific card is discarded by an ability, tuck that card under here from your discard pile. (Limit twice per phase.)"
+  },
+  "abilities": [
+    {
+      "id": "x.hulk-angry-bf.02.dont-make-me-angry-constant"
+    },
+    {
+      "id": "x.hulk-angry-bf.02.dont-make-me-angry-response"
+    }
+  ]
+}

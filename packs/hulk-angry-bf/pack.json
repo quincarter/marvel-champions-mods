@@ -1,21 +1,23 @@
 {
   "id": "hulk-angry-bf",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "kind": "house-rule",
   "name": "Don't Make Me Angry!",
   "authors": [
     "Abis Mal & Bluefire"
   ],
-  "description": "Hulk smashes, and his cards come back.\nAn optional house rule for the official Hulk: \"Don't Make Me Angry!\" starts in play (Permanent. Setup.). When Enraged, Experimental Research or any other ability discards one of Hulk's identity-specific cards, tuck it under here (twice per phase), then play or spend it as if it were in your hand. Add the card to a Hulk deck to use the rule; official decks stay legal without it. Includes a Protection starter deck. 1 card. English and Spanish.",
+  "description": "Hulk smashes, and his cards come back.\nAn optional house rule for the official Hulk, She-Hulk and Hulkling: \"Don't Make Me Angry!\" starts in play (Permanent. Setup.). When Enraged, Experimental Research or any other ability discards one of your hero's identity-specific cards, tuck it under here (twice per phase), then play or spend it as if it were in your hand. Add your hero's copy of the card to its deck to use the rule; official decks stay legal without it. Includes a Hulk Protection starter deck. 3 cards, one per hero. English and Spanish.",
   "tags": [
     "Hulk",
-    "Balance"
+    "Balance",
+    "She-Hulk",
+    "Hulkling"
   ],
   "unlock": "open",
   "cover": "cover.webp",
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
-    "app": ">=0.51.0",
+    "app": ">=0.53.0",
     "packs": []
   },
   "languages": {
