@@ -1,6 +1,6 @@
 {
   "id": "night-thrasher-dh",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "kind": "hero",
   "name": "Night Thrasher",
   "authors": ["DesignHacker"],
@@ -9,6 +9,7 @@
   "wave": "cycle1",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.night-thrasher-dh.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.1.0",

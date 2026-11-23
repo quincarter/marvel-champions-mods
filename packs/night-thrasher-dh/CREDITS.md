@@ -12,6 +12,7 @@ Night Thrasher (`night-thrasher-dh`) is a fan-made pack by **DesignHacker**.
 - The starter deck (`decks/night-thrasher-dh-justice.json`, not the author's): BluefireF5ran, from the curated
   repository (commit `221b4e4`).
 - Ability scripts and the conversion to the pack format: this project.
+- Hero select picture (`art/hero.webp`): supplied by the maintainer.
 
 The card data was converted from MarvelCDB-shaped records with the mod SDK's `importMarvelCdbPack`.
 Character art is Marvel comics art, as used by the author.
