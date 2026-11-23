@@ -1,6 +1,6 @@
 {
   "id": "gwenpool-ptt",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "kind": "hero",
   "name": "Gwenpool",
   "authors": ["Patatasaurio"],
@@ -9,6 +9,7 @@
   "wave": "cycle7",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.gwenpool-ptt.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.1.0",
