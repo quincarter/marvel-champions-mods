@@ -1,6 +1,6 @@
 {
   "id": "yondu-dh",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "kind": "hero",
   "name": "Yondu",
   "authors": ["DesignHacker & BlueHG (nemesis set)"],
@@ -9,6 +9,7 @@
   "wave": "cycle3",
   "unlock": "open",
   "cover": "cover.webp",
+  "pictures": { "hero": { "x.yondu-dh.01a": "art/hero.webp" } },
   "license": "Fan-made, non-commercial; see CREDITS.md",
   "requires": {
     "app": ">=0.1.0",
