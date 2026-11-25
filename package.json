@@ -3,6 +3,6 @@
   "private": true,
   "description": "The SDK every pack kept in this repo (packs/<id>/, path entries) builds with. Bumping it rebuilds and re-checks them all.",
   "devDependencies": {
-    "@champions-digital-game/mod-sdk": "0.54.0"
+    "@champions-digital-game/mod-sdk": "0.55.0"
   }
 }
